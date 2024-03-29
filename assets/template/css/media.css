@@ -1,0 +1,118 @@
+@media only screen and (max-width: 1199px) {
+    .sec-2__item {
+        width: calc(50% - 20px);
+    }
+    .sec-2__img {
+        width: 100%;
+        height: 100%;
+    }
+    .sec-2__img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 767px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 5;
+    }
+    .hamburger div {
+        position: relative;
+        width: 24px;
+        height: 3px;
+        background: #574444;
+        margin-top: 4px;
+        transition: all 0.3s ease-in-out;
+    }
+    .navi {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background-color: #000;
+        top: -100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0);
+    }
+    .nav-wrapper {
+        position: relative;
+        overflow: hidden;
+        overflow-y: auto;
+        height: 100%;
+    }
+    nav {
+        text-align: center;
+    }
+    nav a {
+        position: relative;
+    }
+    nav .footer__item {
+        text-align: left;
+    }
+    /**
+      Animations
+      **/
+    #toggle:checked+.hamburger .top-bun {
+        transform: rotate(-45deg);
+        background: #fff;
+    }
+    #toggle:checked+.hamburger .bottom-bun {
+        opacity: 0;
+        transform: rotate(45deg);
+        background: #fff;
+    }
+    #toggle:checked+.hamburger .meat {
+        transform: rotate(45deg);
+        margin-top: -3px;
+        background: #fff;
+    }
+    #toggle:checked+.hamburger+.navi {
+        top: 0;
+        transform: scale(1);
+    }
+    .sec-3 .slider__card {
+        min-height: auto;
+    }
+    .sec-9 .wrap__slider3 {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 580px) {}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        float: none;
+        flex-wrap: wrap;
+    }
+    .navbar-nav:before,
+    .navbar-nav:after {
+        content: none;
+    }
+    .owl-carousel {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .owl__item {
+        width: calc(50% - 40px);
+    }
+}

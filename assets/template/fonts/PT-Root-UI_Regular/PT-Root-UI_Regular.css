@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'PTRootUIWebRegular';
+    src: url('PT-Root-UI_Regular.eot');
+    src: url('PT-Root-UI_Regular.eot?#iefix') format('embedded-opentype'), url('PT-Root-UI_Regular.woff2') format('woff2'), url('PT-Root-UI_Regular.woff') format('woff'), url('PT-Root-UI_Regular.ttf') format('truetype'), url('PT-Root-UI_Regular.svg#PTRootUIWeb-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
