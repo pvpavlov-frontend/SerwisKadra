@@ -10,8 +10,10 @@ $.fn.navigation = function() {
             var item = $($(this).attr("href"));
             if (item.length) { return item; }
         }),
+
         noScrollAction = false;
     menuItems.click(function(e) {
+        console.log(newMenuHeight);
         var href = $(this).attr("href"),
             offsetTop = href === "#" ? 0 : $(href).offset().top - newMenuHeight;
         noScrollAction = true;

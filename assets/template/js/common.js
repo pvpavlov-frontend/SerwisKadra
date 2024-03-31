@@ -13,11 +13,14 @@ $(document).ready(function() {
         loop: true,
         responsive: {
             767: {
-                items: 2
+                items: 2,
+                dots: true,
             },
             0: {
+                dots: true,
                 center: true,
-                items: 1
+                items: 1,
+
             }
         }
     });
@@ -61,10 +64,10 @@ $(document).ready(function() {
     });
 
 
-    $(".navbar").navigation();
+    $("#menu").navigation();
 
-    $(".navbar-collapse__flex a").on('click', function() {
-        $("#navbar").collapse('hide');
+    $(".navi .navbar-nav li a").on('click', function() {
+        $("#toggle").prop('checked', false);
     });
 
     var $menu = $("#menu");
@@ -116,13 +119,25 @@ $(document).ready(function() {
 }); //jQuery
 
 $(window).on('load resize', function() {
-        if ($(this).width() > 767) {
+        if ($(this).width() > 991) {
             $(".slider").trigger('destroy.owl.carousel');
         } else {
             $(".slider").owlCarousel({
-                items: 1,
+                responsiveClass: true,
+                lazyLoad: true,
+                autoHeight: true,
+                items: 2,
                 margin: 20,
                 dots: true,
+                responsive: {
+                    580: {
+                        items: 2
+                    },
+                    0: {
+                        center: true,
+                        items: 1
+                    }
+                }
             });
         }
     })

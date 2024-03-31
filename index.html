@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./assets/template/css/media.css" />
 </head>
 
-<body>
+<body data-init-mask="yes">
     <header id="home">
         <!-- <div class="top_header" style="display: none;">
 			<div class="container">
@@ -56,12 +56,90 @@
                         </label>
                         <div class="navi">
                             <div class="nav-wrapper">
-                                <nav>
+                                <a href="index.html">
+                                    <img src="./assets/template/img/logo-footer.png" alt="logo-footer">
+                                </a>
+                                <div class="navi__text">
+                                    <div class="tel-mail__flex">
+                                        <div class="tel-mail__item">
+                                            <a class="tel-mail__link" href="tel:+48459569879">
+                                                +48 45 956 98 79
+                                            </a>
+                                        </div>
+                                        <div class="tel-mail__item">
+                                            <a class="tel-mail__link" href="mailto:info@serwiskadra.com">
+                                                info@serwiskadra.com
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="navi__item_top">
+                                    <ul class="nav navbar-nav clearfix">
+                                        <li class="active">
+                                            <a href="#sec2" data-target="#sec2">О компании</a>
+                                        </li>
+                                        <li>
+                                            <a href="#sec3" data-target="#sec3">Услуги </a>
+                                        </li>
+                                        <li>
+                                            <a href="#sec4" data-target="#sec4">Наши преимущества</a>
+                                        </li>
+                                        <li>
+                                            <a href="#sec6" data-target="#sec6">Кейсы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#sec7" data-target="#sec7">Кого подбираем</a>
+                                        </li>
+                                        <li>
+                                            <a href="#sec8" data-target="#sec8">Как мы работаем</a>
+                                        </li>
+                                        <li>
+                                            <a href="#sec9" data-target="#sec9">Наши клиенты</a>
+                                        </li>
+                                        <li>
+                                            <a href="#sec10" data-target="#sec10">Контакты</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer__item_bottom">
+                                    <div class="social__flex">
+                                        <div class="social">
+                                            <div class="social__item">
+                                                <a href="#">
+                                                    <img src="./assets/template/img/svg/icon_1.svg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="social__item">
+                                                <a href="#">
+                                                    <img src="./assets/template/img/svg/icon_2.svg" alt="">
+                                                </a>
+                                            </div>
 
-                                </nav>
+                                            <div class="social__item">
+                                                <a href="#">
+                                                    <img src="./assets/template/img/svg/icon_3.svg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="social__item">
+                                                <a href="#">
+                                                    <img src="./assets/template/img/svg/icon_4.svg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="social__item">
+                                                <a href="#">
+                                                    <img src="./assets/template/img/svg/icon_5.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="social__btn">
+                                            <button class="btn btn-main" data-fancybox="" data-src="#dialog-content2">
+                                                Заказать подбор персонала
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
                     </div>
                     <div id="navbar" class="navbar-collapse collapse ">
                         <div class="navbar__social_flex">
@@ -124,22 +202,21 @@
                                     <a href="#sec4" data-target="#sec4">Наши преимущества</a>
                                 </li>
                                 <li>
-                                    <a href="#sec5" data-target="#sec5">Кейсы</a>
+                                    <a href="#sec6" data-target="#sec6">Кейсы</a>
                                 </li>
                                 <li>
-                                    <a href="#sec6" data-target="#sec6">Кого подбираем</a>
+                                    <a href="#sec7" data-target="#sec7">Кого подбираем</a>
                                 </li>
                                 <li>
-                                    <a href="#sec7" data-target="#sec7">Как мы работаем</a>
+                                    <a href="#sec8" data-target="#sec8">Как мы работаем</a>
                                 </li>
                                 <li>
-                                    <a href="#sec8" data-target="#sec8">Стоимость подбора</a>
+                                    <a href="#sec9" data-target="#sec9">Наши клиенты</a>
                                 </li>
                                 <li>
-                                    <a href="#sec9" data-target="#sec9">Контакты</a>
+                                    <a href="#sec10" data-target="#sec10">Контакты</a>
                                 </li>
                             </ul>
-
                         </div>
                     </div>
                 </div>
@@ -155,9 +232,9 @@
                             <h1>
                                 Оперативно предоставим любое количество персонала с необходимым опытом работы и навыками
                             </h1>
-                            <a class="btn btn-transition" href="service.html">
+                            <button class="btn btn-transition" data-fancybox="" data-src="#dialog-content2">
                                 Заказать подбор персонала
-                            </a>
+                            </button>
                         </div>
                         <div class="topic__right">
                             <img src="./assets/template/img/main-topic.png" alt="">
@@ -182,7 +259,8 @@
                     <div class="sec-2__flex">
                         <div class="sec-2__item">
                             <div class="sec-2__img">
-                                <img src="./assets/template/img/img_1.jpg" alt="">
+                                <img class="mob_hidden" src="./assets/template/img/img_1.jpg" alt="">
+                                <img class="mob_visible" src="./assets/template/img/img_1--mob.jpg" alt="">
                             </div>
                         </div>
                         <div class="sec-2__item">
@@ -210,7 +288,9 @@
                             Оставьте заявку и мы сразу начнем работу по вашей потребности
                         </p>
                         <div class="sec-2__btn">
-                            <a href="#" class="btn btn-main fancybox">Экспресс-подбор персонала</a>
+                            <button class="btn btn-main" data-fancybox="" data-src="#dialog-content2">
+                                Заказать подбор персонала
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -250,9 +330,10 @@
                                     </ul>
                                 </div>
                                 <div class="slider__bottom">
-                                    <a class="btn btn-main" href="service.html">
+                                    <button class="btn btn-main" data-fancybox="" data-src="#dialog-content3">
                                         Заказать услугу
-                                    </a>
+                                    </button>
+
                                     <div class="die">
                                         <p class="die__p">
                                             От 33 zl нетто в час
@@ -286,9 +367,9 @@
                                     </ul>
                                 </div>
                                 <div class="slider__bottom">
-                                    <a class="btn btn-main" href="service.html">
+                                    <button class="btn btn-main" data-fancybox="" data-src="#dialog-content3">
                                         Заказать услугу
-                                    </a>
+                                    </button>
                                     <div class="die">
                                         <p class="die__p">
                                             От 39 zl нетто в час
@@ -322,9 +403,9 @@
                                     </ul>
                                 </div>
                                 <div class="slider__bottom">
-                                    <a class="btn btn-main" href="service.html">
+                                    <button class="btn btn-main" data-fancybox="" data-src="#dialog-content3">
                                         Заказать услугу
-                                    </a>
+                                    </button>
                                     <div class="die">
                                         <p class="die__p">
                                             От 1000 zl за чел.
@@ -361,9 +442,9 @@
                                     </ul>
                                 </div>
                                 <div class="slider__bottom">
-                                    <a class="btn btn-main" href="service.html">
+                                    <button class="btn btn-main" data-fancybox="" data-src="#dialog-content3">
                                         Заказать услугу
-                                    </a>
+                                    </button>
                                     <div class="die">
                                         <p class="die__p">
                                             От 35 zl нетто в час
@@ -465,7 +546,8 @@
                     <div class="sec-5__flex">
                         <div class="sec-5__item">
                             <div class="sec-5__item_img">
-                                <img src="./assets/template/img/girl_1.jpg" alt="">
+                                <img class="mob_hidden" src="./assets/template/img/girl_1.jpg" alt="">
+                                <img class="mob_visible" src="./assets/template/img/girl_1--mob.jpg" alt="">
                             </div>
                             <div class="sec-5__item_text">
                                 <div class="die">
@@ -488,7 +570,8 @@
                         </div>
                         <div class="sec-5__item">
                             <div class="sec-5__item_img">
-                                <img src="./assets/template/img/girl_2.jpg" alt="">
+                                <img class="mob_hidden" src="./assets/template/img/girl_2.jpg" alt="">
+                                <img class="mob_visible" src="./assets/template/img/girl_2--mob.jpg" alt="">
                             </div>
                             <div class="sec-5__item_text">
                                 <div class="die">
@@ -514,7 +597,7 @@
                         </div>
                     </div>
                     <div class="sec-5__btn">
-                        <button class="btn btn-main" data-fancybox="" data-src="#dialog-content">
+                        <button class="btn btn-main" data-fancybox="" data-src="#dialog-content2">
                             Заказать подбор персонала
                         </button>
                     </div>
@@ -591,13 +674,10 @@
                                         </div>
                                         <ul>
                                             <li>
-                                                В течении двух месяцев подобрать 75 человек на швейное предприятие;
+                                                За три месяца подобрать 100 человек на складское предприятие;
                                             </li>
                                             <li>
-                                                Персонал должен иметь опыт работы швеями, выполнять план по поставленным задачам;
-                                            </li>
-                                            <li>
-                                                Персонал должен проработать на месте работы больше 6 месяцев.
+                                                Персонал должен строго соответствовать нормам утвержденными в брифе с заказчиком;
                                             </li>
                                         </ul>
                                         <div class="case__badge">
@@ -607,13 +687,13 @@
                                         </div>
                                         <ul>
                                             <li>
-                                                Подобрали и оформили на швейное предприятие в течении двух месяцев 75 человек;
+                                                Подобрали и оформили на складское предприятие в течении трех месяцев 100 человек;
                                             </li>
                                             <li>
-                                                Подобрали и оформили на швейное предприятие в течении двух месяцев 75 человек;
+                                                Подобрали кадровый резерв в количестве 30 человек (на случай замены);
                                             </li>
                                             <li>
-                                                59 человек продолжают работать и сейчас, 75 человек отработали больше 6 месяцев.
+                                                Полностью закрыли потребность в персонале согласно утвержденных норм соответствия вакансии.
                                             </li>
                                         </ul>
                                     </div>
@@ -626,7 +706,7 @@
                                     </div>
                                     <div class="case__middle">
                                         <p class="case__title">
-                                            К нам обратилось <span>швейное предприятие</span> со следующим запросом:
+                                            В связи с расширением деятельности производственного предприятия потребовалось:
                                         </p>
                                         <div class="case__badge">
                                             <p>
@@ -635,10 +715,10 @@
                                         </div>
                                         <ul>
                                             <li>
-                                                В течении двух месяцев подобрать 75 человек на швейное предприятие;
+                                                За два месяца подобрать 50 человек на производственное предприятие;
                                             </li>
                                             <li>
-                                                Персонал должен иметь опыт работы швеями, выполнять план по поставленным задачам;
+                                                Персонал должен строго соответствовать нормам утвержденными в брифе с заказчиком;
                                             </li>
                                             <li>
                                                 Персонал должен проработать на месте работы больше 6 месяцев.
@@ -651,13 +731,13 @@
                                         </div>
                                         <ul>
                                             <li>
-                                                Подобрали и оформили на швейное предприятие в течении двух месяцев 75 человек;
+                                                Подобрали и оформили на производственное предприятие в течении двух месяцев 50 человек;
                                             </li>
                                             <li>
-                                                Подобрали и оформили на швейное предприятие в течении двух месяцев 75 человек;
+                                                Подобрали кадровый резерв в количестве 25 человек (на случай замены);
                                             </li>
                                             <li>
-                                                59 человек продолжают работать и сейчас, 75 человек отработали больше 6 месяцев.
+                                                37 человек продолжают работать и сейчас, 50 человек отработали больше 6 месяцев.
                                             </li>
                                         </ul>
                                     </div>
@@ -910,7 +990,7 @@
                         </div>
                     </div>
                     <div class="sec-7__btn">
-                        <button class="btn btn-main" data-fancybox="" data-src="#dialog-content">
+                        <button class="btn btn-main" data-fancybox="" data-src="#dialog-content2">
                             Заказать подбор персонала
                         </button>
                     </div>
@@ -993,7 +1073,7 @@
                         </div>
                     </div>
                     <div class="sec-8__btn">
-                        <button class="btn btn-main" data-fancybox="" data-src="#dialog-content">
+                        <button class="btn btn-main" data-fancybox="" data-src="#dialog-content2">
                             Заказать подбор персонала
                         </button>
                     </div>
@@ -1209,7 +1289,7 @@
                                         </div>
                                     </div>
                                     <div class="social__btn">
-                                        <button class="btn btn-main" data-fancybox="" data-src="#dialog-content">
+                                        <button class="btn btn-main" data-fancybox="" data-src="#dialog-content2">
                                             Заказать подбор персонала
                                         </button>
                                     </div>
@@ -1222,25 +1302,15 @@
         </div>
     </footer>
     <div id="dialog-content" class="" style="display: none;">
-        <h2>
-            Виведення продукції на зовнішній ринок
-        </h2>
-        <h3>
-            Заповніть форму і ми надішлемо Вам нашу пропозицію протягом 15 хвилин
-        </h3>
         <div class="form__wrap">
+            <h3>
+                Если у вас остались вопросы - оставьте ваши контактные данные и мы свяжемся с вами
+            </h3>
             <form data-parsley-validate id="form1" class="form">
-                <h3>
-                    Оставить заявку
-                </h3>
-                <div class="form-group">
-                    <input id="firstname" name="fio" class="input" type="text" pattern="[a-zA-Zа-яА-Я]+" placeholder=" " data-parsley-required />
-                    <label for="firstname" class="placeholder">Полное имя</label>
-                </div>
                 <div class="form-group__flex">
                     <div class="form-group">
-                        <input id="mail" name="email" class="input" type="text" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" placeholder=" " data-parsley-required>
-                        <label for="mail" class="placeholder">Email</label>
+                        <input id="firstname" name="fio" class="input" type="text" pattern="[a-zA-Zа-яА-Я]+" placeholder=" " data-parsley-required />
+                        <label for="firstname" class="placeholder">Ваше имя</label>
                     </div>
                     <div class="form-group">
                         <input id="phone" name="phone" class="input" type="text" pattern="\+?[0-9\s\-\(\)]+" placeholder=" " data-parsley-required />
@@ -1248,14 +1318,73 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <textarea name="send" id="message" class="input" type="text" placeholder="Ваше сообщение"></textarea>
+                    <input id="mail" name="email" class="input" type="text" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" placeholder=" " data-parsley-required>
+                    <label for="mail" class="placeholder">E-mail</label>
                 </div>
+                <div class="form-group">
+                    <textarea name="send" id="message" class="input" type="text" placeholder="Комментарий"></textarea>
+                </div>
+                <p class="form__p">
+                    Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="#"> политикой конфиденциальности.</a>
+                </p>
 
-                <button type="submit" class="btn btn-main">Отправить</button>
+                <button type="submit" class="btn btn-main">Отправить запрос</button>
             </form>
         </div>
     </div>
+    <div id="dialog-content2" class="" style="display: none;">
+        <div class="form__wrap">
+            <h3>
+                Укажите ваши контактные данные и наш менеджер свяжется с вами в течение 15 минут
+            </h3>
+            <form data-parsley-validate id="form1" class="form">
+                <div class="form-group">
+                    <input id="firstname" name="fio" class="input" type="text" pattern="[a-zA-Zа-яА-Я]+" placeholder=" " data-parsley-required />
+                    <label for="firstname" class="placeholder">Ваше имя</label>
+                </div>
+                <div class="form-group">
+                    <input id="mail" name="email" class="input" type="text" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" placeholder=" " data-parsley-required>
+                    <label for="mail" class="placeholder">E-mail</label>
+                </div>
+                <p class="form__p">
+                    Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="#"> политикой конфиденциальности.</a>
+                </p>
 
+                <button type="submit" class="btn btn-main">Экспресс-подбор персонала</button>
+            </form>
+        </div>
+    </div>
+    <div id="dialog-content3" class="" style="display: none;">
+        <div class="form__wrap">
+            <h3>
+                Укажите ваши контактные данные и наш менеджер свяжется с вами в течение 15 минут
+            </h3>
+            <form data-parsley-validate id="form1" class="form">
+                <div class="form-group__flex">
+                    <div class="form-group">
+                        <input id="firstname" name="fio" class="input" type="text" pattern="[a-zA-Zа-яА-Я]+" placeholder=" " data-parsley-required />
+                        <label for="firstname" class="placeholder">Ваше имя</label>
+                    </div>
+                    <div class="form-group">
+                        <input id="phone" name="phone" class="input" type="text" pattern="\+?[0-9\s\-\(\)]+" placeholder=" " data-parsley-required />
+                        <label for="phone" class="placeholder">Телефон</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input id="mail" name="email" class="input" type="text" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" placeholder=" " data-parsley-required>
+                    <label for="mail" class="placeholder">E-mail</label>
+                </div>
+                <div class="form-group">
+                    <textarea name="send" id="message" class="input" type="text" placeholder="Комментарий"></textarea>
+                </div>
+                <p class="form__p">
+                    Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="#"> политикой конфиденциальности.</a>
+                </p>
+
+                <button type="submit" class="btn btn-main">Заказать услугу</button>
+            </form>
+        </div>
+    </div>
     <div class="modal fade" id="myModal_2_1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="forma-black">
