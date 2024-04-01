@@ -867,6 +867,10 @@ header .navbar-header a img {
 .sec-6 .wrap__slider2 {
   padding: 0 100px;
 }
+.sec-6 .wrap__slider2 .owl-stage {
+  display: flex;
+  align-items: stretch;
+}
 .sec-6 .wrap__slider2 .owl-nav {
   position: absolute;
   top: 50%;
@@ -903,7 +907,11 @@ header .navbar-header a img {
   background: #fff url("../img/svg/arrow-right__b.svg") center no-repeat;
   border: 1px solid #008ED6;
 }
+.sec-6 .case__item {
+  height: 100%;
+}
 .sec-6 .case__card {
+  height: 100%;
   background: #008ED6;
   border-radius: 20px;
   overflow: hidden;

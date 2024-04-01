@@ -912,6 +912,10 @@ header {
     }
     .wrap__slider2 {
         padding: 0 100px;
+        .owl-stage {
+            display: flex;
+            align-items: stretch;
+        }
         .owl-nav {
             position: absolute;
             top: 50%;
@@ -949,7 +953,11 @@ header {
         }
     }
     .case {
+        &__item {
+            height: 100%;
+        }
         &__card {
+            height: 100%;
             background: $main;
             border-radius: 20px;
             overflow: hidden;
