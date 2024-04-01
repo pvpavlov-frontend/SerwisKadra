@@ -240,7 +240,7 @@ body .btn {
   line-height: 1em;
   color: #fff;
   width: 100%;
-  padding: 21px 21px;
+  padding: 21px 10px;
   box-sizing: border-box;
   border: 2px solid transparent;
   border-radius: 0;
@@ -417,7 +417,7 @@ header .navbar-header a img {
   font-size: 40px;
   line-height: 1.12em;
   color: #fff;
-  max-width: 825px;
+  max-width: 800px;
   margin-top: 0;
   margin-bottom: 50px;
 }
@@ -472,8 +472,9 @@ header .navbar-header a img {
   margin-bottom: 21px;
 }
 .sec-2__btn {
-  display: table;
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .sec-2__btn .btn {
   max-width: 280px;
@@ -660,7 +661,7 @@ header .navbar-header a img {
 }
 .sec-3 .slider__middle ul li {
   position: relative;
-  padding-left: 50px;
+  padding-left: 42px;
   font-size: 18px;
   line-height: 1.2em;
   color: #141414;
@@ -684,10 +685,10 @@ header .navbar-header a img {
   margin-top: auto;
 }
 .sec-3 .slider__bottom .btn {
-  width: calc(38% - 10px);
+  width: calc(36% - 10px);
 }
 .sec-3 .slider__bottom .die {
-  width: calc(62% - 10px);
+  width: calc(64% - 10px);
   transition: all 0.3s;
 }
 .sec-3 .slider__bottom .die::before {
@@ -852,7 +853,7 @@ header .navbar-header a img {
   color: #fff;
 }
 .sec-5 .die__p {
-  padding: 22px 10px;
+  padding: 15px 10px;
   text-align: center;
 }
 
@@ -1313,11 +1314,11 @@ header .navbar-header a img {
   top: 18px;
 }
 .form .input:not(:-moz-placeholder-shown) ~ .placeholder {
-  transform: translateY(-20px) translateX(0px) scale(0.95);
+  transform: translateY(-17px) translateX(0px) scale(0.95);
 }
 .form .input:focus ~ .placeholder,
 .form .input:not(:placeholder-shown) ~ .placeholder {
-  transform: translateY(-20px) translateX(0px) scale(0.95);
+  transform: translateY(-17px) translateX(0px) scale(0.95);
 }
 .form .input:not(:-moz-placeholder-shown) ~ .placeholder {
   font-size: 14px;

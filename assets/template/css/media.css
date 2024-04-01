@@ -488,7 +488,8 @@ Animations
         width: 100%;
         max-width: 580px;
         margin: 0 auto 20px;
-        min-height: 400px;
+        /* min-height: 400px; */
+        min-height: auto;
         padding: 37px 18px 24px;
     }
     .sec-4__title {
