@@ -9,7 +9,7 @@ $(document).ready(function() {
         dots: false,
         responsiveClass: true,
         lazyLoad: true,
-        autoHeight: true,
+        // autoHeight: true,
         loop: true,
         responsive: {
             767: {
