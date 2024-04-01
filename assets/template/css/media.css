@@ -671,6 +671,16 @@ Animations
         margin-top: -58px;
         display: flex;
     }
+    .fancybox__content {
+        padding: 15px;
+    }
+    .form .form-group__flex {
+        flex-direction: column;
+    }
+    .form .form-group__flex .form-group:nth-child(1),
+    .form .form-group__flex .form-group:nth-child(2) {
+        width: 100%;
+    }
 }
 
 @media (min-width: 768px) {
