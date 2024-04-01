@@ -54,7 +54,7 @@
   background-color: transparent;
   outline: none;
   outline-offset: 0px;
-  margin-right: 3.4%;
+  margin-right: 2%;
 }
 .navbar-default .navbar-nav li:last-child {
   margin-right: 0;
@@ -324,7 +324,7 @@ header .navbar__social_item {
   padding: 0 5px;
 }
 header .navbar__btn .btn-main {
-  padding: 21px 63px;
+  padding: 21px 50px;
   width: 100%;
   max-width: 280px;
 }
@@ -684,10 +684,10 @@ header .navbar-header a img {
   margin-top: auto;
 }
 .sec-3 .slider__bottom .btn {
-  width: calc(53% - 10px);
+  width: calc(38% - 10px);
 }
 .sec-3 .slider__bottom .die {
-  width: calc(47% - 10px);
+  width: calc(62% - 10px);
   transition: all 0.3s;
 }
 .sec-3 .slider__bottom .die::before {
@@ -733,7 +733,7 @@ header .navbar-header a img {
 }
 .sec-4__flex {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: space-between;
 }
 .sec-4__item {
